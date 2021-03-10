@@ -51,5 +51,12 @@ namespace gamejoltapiTrophies
             //return response
             return response;
         }
+        public async Task<string> AddAchieved(bool sucess, string trophy_id)
+        {
+            string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
+            string cmd = "trophies/" + "add-achieved/" + "?game_id=" + game_id;
+
+
+        }
     }
 }
