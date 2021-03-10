@@ -31,13 +31,19 @@ namespace gamejoltapiTrophies
             {
                 cmd = "trophies/?game_id=" + game_id + "&username=" + username + "&user_token=" + user_token + "&achieved=" + achieved;
             }
-
-            if (trophy_id!=null)
+            else
+            {
+                cmd = "trophies/?game_id=" + game_id + "&username=" + username + "&user_token=" + user_token;
+            }
+            if (trophy_id != null)
             {
                 cmd = "trophies/?game_id=" + game_id + "&username=" + username + "&user_token=" + user_token + "&trophy_id" + trophy_id;
             }
             //if not, then set the default command
-            cmd = "trophies/?game_id=" + game_id + "&username=" + username + "&user_token=" + user_token;
+            else
+            {
+                cmd = "trophies/?game_id=" + game_id + "&username=" + username + "&user_token=" + user_token;
+            }
             //get signature(signature is the MD5 hash of everything + private_key)
             string fhash = Tools.MD5Hash(cmd + private_key);
             //get actual response(with signature)
