@@ -13,10 +13,8 @@ namespace gamejoltapiCore
 
         public GJCore(string gameid, string privatekey)
         {
-            gameid = game_id;
-            privatekey = private_key;
-           
-
+            game_id = gameid;
+            private_key = privatekey;
         }
 
     }

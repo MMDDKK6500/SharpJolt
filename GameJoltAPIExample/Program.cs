@@ -1,6 +1,7 @@
 ﻿using System;
 using gamejoltapiCore;
 using gamejoltapiTrophies;
+using gamejoltapiUsers;
 
 namespace GameJoltAPIExample
 {
@@ -9,8 +10,9 @@ namespace GameJoltAPIExample
         static void Main()
         {
             GJCore c = new GJCore("86282091", "9021he90h9210");
-            GJTrophies t = new GJTrophies(c, "245622");
-            Console.WriteLine(c);
+            GJUser u = new GJUser(c, "MMDDKK", "0mad6");
+            GJTrophies t = new GJTrophies(c, u,  "245622");
+            Console.WriteLine(c.game_id);
             Console.WriteLine(t);
             Console.ReadKey();
         }

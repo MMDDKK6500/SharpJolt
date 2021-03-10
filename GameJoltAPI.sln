@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJoltAPI_Trophies", "Gam
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJoltAPIExample", "GameJoltAPIExample\GameJoltAPIExample.csproj", "{F059888A-48A1-40C3-AEC7-6AC92E877519}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJoltAPI_Users", "GameJoltAPI_Users\GameJoltAPI_Users.csproj", "{FDA465D4-C9BF-40F3-9D08-D0ACED59CC8A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{F059888A-48A1-40C3-AEC7-6AC92E877519}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F059888A-48A1-40C3-AEC7-6AC92E877519}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F059888A-48A1-40C3-AEC7-6AC92E877519}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDA465D4-C9BF-40F3-9D08-D0ACED59CC8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDA465D4-C9BF-40F3-9D08-D0ACED59CC8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDA465D4-C9BF-40F3-9D08-D0ACED59CC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDA465D4-C9BF-40F3-9D08-D0ACED59CC8A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

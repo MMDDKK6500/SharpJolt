@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\GameJoltAPI\GameJoltAPI_Core.csproj" />
-    <ProjectReference Include="..\GameJoltAPI_Users\GameJoltAPI_Users.csproj" />
   </ItemGroup>
 
 </Project>
