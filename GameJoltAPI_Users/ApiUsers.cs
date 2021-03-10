@@ -22,7 +22,7 @@ namespace gamejoltapiUsers
         public async Task<string> authUser()
         {
             string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
-            string cmd = "users/?game_id=" + game_id + "&username=" + username + "&user_token=" + user_token;
+            string cmd = "users/auth/?game_id=" + game_id + "&username=" + username + "&user_token=" + user_token;
             string fhash = Tools.MD5Hash(apiurl + cmd);
             string res = await Tools.Get(apiurl + cmd + "&signature=" + fhash);
             return res;
