@@ -6,6 +6,10 @@ using System.Text;
 
 namespace gamejoltapiCore
 {
+
+    /// <summary>
+    /// 
+    /// </summary>
     public class GJCore
     {
         public string game_id;
@@ -18,6 +22,9 @@ namespace gamejoltapiCore
         }
 
     }
+
+    //////////////////////////////HTTP CLIENT
+
     public class Tools
     {
         static readonly HttpClient client = new HttpClient();
@@ -36,6 +43,11 @@ namespace gamejoltapiCore
                 return "An error has occured!";
             }
         }
+
+
+
+
+        ////////////Hash
         public static string MD5Hash(string input)
         {
             MD5 m = MD5.Create();
