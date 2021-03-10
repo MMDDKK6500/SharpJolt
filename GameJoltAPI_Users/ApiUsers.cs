@@ -24,7 +24,17 @@ namespace gamejoltapiUsers
         {
             string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
             string cmd = "users/auth/?game_id=" + game_id + "&username=" + username + "&user_token=" + user_token;
-            string fhash = Tools.MD5Hash(apiurl + cmd);
+            string fhash = Tools.MD5Hash(apiurl + cmd + private_key);
+            string res = await Tools.Get(apiurl + cmd + "&signature=" + fhash);
+            return res;
+        }
+
+
+        public async Task<string> fetchUser(int user_id)
+        {
+            string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
+            string cmd = "users/?game_id=" + game_id + "&username=" + username + "&user_id=" + user_id;
+            string fhash = Tools.MD5Hash(apiurl + cmd + private_key);
             string res = await Tools.Get(apiurl + cmd + "&signature=" + fhash);
             return res;
         }
