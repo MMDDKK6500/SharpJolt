@@ -22,9 +22,11 @@ namespace gamejoltapiCore
         }
 
     }
+    
 
-    //////////////////////////////HTTP CLIENT
-
+    /// <summary>
+    /// 
+    /// </summary>
     public class Tools
     {
         static readonly HttpClient client = new HttpClient();
