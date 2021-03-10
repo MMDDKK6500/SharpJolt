@@ -52,12 +52,7 @@ namespace gamejoltapiTrophies
             return response;
         }
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="user_id"></param>
-        /// <param name="trophy_id"></param>
-        /// <returns></returns>
+
         public async Task<string> Add(string trophy_id)
         {
 
