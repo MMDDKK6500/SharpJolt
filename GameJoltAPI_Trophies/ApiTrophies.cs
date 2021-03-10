@@ -2,6 +2,7 @@
 using gamejoltapiUsers;
 using System.Threading.Tasks;
 
+
 namespace gamejoltapiTrophies
 {
     public class GJTrophies
@@ -14,7 +15,7 @@ namespace gamejoltapiTrophies
         public GJTrophies(GJCore GJCore, GJUser GJUser)
         {
             //make table id and game_id publics
-            game_id = GJCore.game_id;
+            game_id = GJUser.game_id1;
             username = GJUser.username;
             user_token = GJUser.user_token;
             private_key = GJCore.private_key;
@@ -22,6 +23,7 @@ namespace gamejoltapiTrophies
 
         public async Task<string> Fetch(bool achieved, string trophy_id)
         {
+
             string cmd;
             string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
             //check if any of the non-required parameters are inputed
@@ -45,7 +47,7 @@ namespace gamejoltapiTrophies
             //get signature(signature is the MD5 hash of everything + private_key)
             string fhash = Tools.MD5Hash(cmd + private_key);
             //get actual response(with signature)
-            string response  = await Tools.Get(apiurl + cmd + "&signature=" + fhash);
+            string response = await Tools.Get(apiurl + cmd + "&signature=" + fhash);
             //return response
             return response;
         }

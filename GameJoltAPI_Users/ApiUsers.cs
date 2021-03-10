@@ -9,6 +9,7 @@ namespace gamejoltapiUsers
         public string game_id;
         public string private_key;
 
+
         public GJUser(GJCore GJCore, string user_name, string usertoken)
         {
             username = user_name;
