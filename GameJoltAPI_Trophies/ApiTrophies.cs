@@ -58,7 +58,7 @@ namespace gamejoltapiTrophies
         /// <param name="user_id"></param>
         /// <param name="trophy_id"></param>
         /// <returns></returns>
-        public async Task<string> Add(string user_id, string trophy_id)
+        public async Task<string> Add(string trophy_id)
         {
 
             //url of gamejolt 
