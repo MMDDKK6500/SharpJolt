@@ -6,16 +6,14 @@ namespace gamejoltapiTrophies
 {
     public class GJTrophies
     {
-        public string table_id;
         public string game_id;
         public string username;
         public string user_token;
         public string private_key;
 
-        public GJTrophies(GJCore GJCore, GJUser GJUser, string tableid)
+        public GJTrophies(GJCore GJCore, GJUser GJUser)
         {
             //make table id and game_id publics
-            table_id = tableid;
             game_id = GJCore.game_id;
             username = GJUser.username;
             user_token = GJUser.user_token;

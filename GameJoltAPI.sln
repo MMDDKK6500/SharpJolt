@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30907.101
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJoltAPI_Core", "GameJoltAPI\GameJoltAPI_Core.csproj", "{3FD9D3A7-F949-4B5F-914A-066D522076D1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameJoltAPI_Core", "GameJoltAPI\GameJoltAPI_Core.csproj", "{3FD9D3A7-F949-4B5F-914A-066D522076D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJoltAPI_Trophies", "GameJoltAPI_Trophies\GameJoltAPI_Trophies.csproj", "{993498EC-B302-47F4-8987-E74B10B45897}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameJoltAPI_Trophies", "GameJoltAPI_Trophies\GameJoltAPI_Trophies.csproj", "{993498EC-B302-47F4-8987-E74B10B45897}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJoltAPIExample", "GameJoltAPIExample\GameJoltAPIExample.csproj", "{F059888A-48A1-40C3-AEC7-6AC92E877519}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameJoltAPIExample", "GameJoltAPIExample\GameJoltAPIExample.csproj", "{F059888A-48A1-40C3-AEC7-6AC92E877519}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJoltAPI_Users", "GameJoltAPI_Users\GameJoltAPI_Users.csproj", "{FDA465D4-C9BF-40F3-9D08-D0ACED59CC8A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameJoltAPI_Users", "GameJoltAPI_Users\GameJoltAPI_Users.csproj", "{FDA465D4-C9BF-40F3-9D08-D0ACED59CC8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJoltAPI_Scores", "GameJoltAPI_Scores\GameJoltAPI_Scores.csproj", "{F2DF2DEA-0FB7-430D-BFA8-9F39CA14023C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{FDA465D4-C9BF-40F3-9D08-D0ACED59CC8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FDA465D4-C9BF-40F3-9D08-D0ACED59CC8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FDA465D4-C9BF-40F3-9D08-D0ACED59CC8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2DF2DEA-0FB7-430D-BFA8-9F39CA14023C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2DF2DEA-0FB7-430D-BFA8-9F39CA14023C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2DF2DEA-0FB7-430D-BFA8-9F39CA14023C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2DF2DEA-0FB7-430D-BFA8-9F39CA14023C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
