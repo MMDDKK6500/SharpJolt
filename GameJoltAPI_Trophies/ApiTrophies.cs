@@ -15,7 +15,7 @@ namespace gamejoltapiTrophies
         public GJTrophies(GJCore GJCore, GJUser GJUser)
         {
             //make table id and game_id publics
-            game_id = GJUser.game_id1;
+            game_id = GJUser.game_id;
             username = GJUser.username;
             user_token = GJUser.user_token;
             private_key = GJCore.private_key;
@@ -51,12 +51,35 @@ namespace gamejoltapiTrophies
             //return response
             return response;
         }
-        public async Task<string> AddAchieved(bool sucess, string trophy_id)
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="user_id"></param>
+        /// <param name="trophy_id"></param>
+        /// <returns></returns>
+        public async Task<string> Add(string user_id, string trophy_id)
         {
+
+            //url of gamejolt 
             string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
-            string cmd = "trophies/" + "add-achieved/" + "?game_id=" + game_id;
 
 
+            //String with paramethers
+            string cmd = "trophies/" + "add-achieved/" + "?game_id=" + game_id + "&username=" +
+                         username + "&user_token=" + user_token + "&trophy_id=" + trophy_id;
+
+
+            //Hash of signature 
+            string fhash = Tools.MD5Hash(apiurl + cmd + private_key);
+
+
+            //Response urlApi + paramether + signature
+            string response = await Tools.Get(apiurl + cmd + "&signature=" + fhash);
+
+
+            return response;
         }
+
     }
 }
