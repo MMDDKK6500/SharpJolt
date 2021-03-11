@@ -78,11 +78,6 @@ namespace gamejoltapiTrophies
 
 
 
-        /// <summary>
-        /// 
-        /// </summary>
-        /// <param name="trophy_id"></param>
-        /// <returns></returns>
         public async Task<string> Remove(string trophy_id)
         {
             //url of gamejolt 
