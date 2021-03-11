@@ -11,6 +11,7 @@ namespace gamejoltapiTrophies
         public string username;
         public string user_token;
         public string private_key;
+        public string apiurl;
 
         public GJTrophies(GJCore GJCore, GJUser GJUser)
         {
@@ -19,13 +20,13 @@ namespace gamejoltapiTrophies
             username = GJUser.username;
             user_token = GJUser.user_token;
             private_key = GJCore.private_key;
+            apiurl = GJCore.apiurl;
         }
 
         public async Task<string> Fetch(bool achieved, string trophy_id)
         {
 
             string cmd;
-            string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
             //check if any of the non-required parameters are inputed
             if (achieved)
             {
@@ -55,11 +56,6 @@ namespace gamejoltapiTrophies
 
         public async Task<string> Add(string trophy_id)
         {
-
-            //url of gamejolt 
-            string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
-
-
             //String with paramethers
             string cmd = "trophies/" + "add-achieved/" + "?game_id=" + game_id + "&username=" +
                          username + "&user_token=" + user_token + "&trophy_id=" + trophy_id;
@@ -80,10 +76,6 @@ namespace gamejoltapiTrophies
 
         public async Task<string> Remove(string trophy_id)
         {
-            //url of gamejolt 
-            string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
-
-
             //String with paramethers
             string cmd =  "trophies/" + "remove-achieved/" + "?game_id=" + game_id + "&username=" + username +
                             "&user_token=" + user_token + "&trophy_id=" + trophy_id;

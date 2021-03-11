@@ -2,10 +2,9 @@
 using gamejoltapiCore;
 using gamejoltapiUsers;
 
-
-namespace gamejoltapiScore
+namespace gamejoltapiSessions
 {
-    public class GJScore
+    public class GJSession
     {
         public string game_id;
         public string username;
@@ -13,7 +12,7 @@ namespace gamejoltapiScore
         public string private_key;
         public string apiurl;
 
-        public GJScore(GJCore GJCore, GJUser GJUser)
+        public GJSession(GJCore GJCore, GJUser GJUser)
         {
             //make table id and game_id publics
             game_id = GJUser.game_id;
@@ -22,12 +21,5 @@ namespace gamejoltapiScore
             private_key = GJCore.private_key;
             apiurl = GJCore.apiurl;
         }
-
-
-/*        public async Task<string> Fetch()
-        {
-
-
-        }*/
     }
 }

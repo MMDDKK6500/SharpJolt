@@ -14,6 +14,7 @@ namespace gamejoltapiCore
     {
         public string game_id;
         public string private_key;
+        public string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
 
         public GJCore(string gameid, string privatekey)
         {
