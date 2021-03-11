@@ -9,9 +9,9 @@ namespace gamejoltapiCore
 
     public class GJCore
     {
+        public static string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
         public string game_id;
         public string private_key;
-        public string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
 
         public GJCore(string gameid, string privatekey)
         {
@@ -31,13 +31,15 @@ namespace gamejoltapiCore
 
     public class Tools
     {
+        public static string apiurl = GJCore.apiurl;
+
         static readonly HttpClient client = new HttpClient();
 
         public static async Task<string> Get(string url)
         {
             try
             {
-                HttpResponseMessage response = await client.GetAsync("http://api.gamejolt.com/api/game/v1_2/" + url);
+                HttpResponseMessage response = await client.GetAsync(apiurl + url);
                 response.EnsureSuccessStatusCode();
                 string responseBody = await response.Content.ReadAsStringAsync();
                 return responseBody;
