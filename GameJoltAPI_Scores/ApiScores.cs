@@ -1,7 +1,7 @@
 ﻿using System;
 using gamejoltapiCore;
 using gamejoltapiUsers;
-
+using System.Threading.Tasks;
 
 namespace gamejoltapiScore
 {

@@ -21,7 +21,7 @@ namespace gamejoltapiUsers
             apiurl = GJCore.apiurl;
         }
         
-        public async Task<string> authUser()
+        public async Task<string> Auth()
         {
             string cmd = "users/auth/?game_id=" + game_id + "&username=" + username + "&user_token=" + user_token;
             string fhash = Tools.MD5Hash(apiurl + cmd + private_key);
@@ -30,7 +30,7 @@ namespace gamejoltapiUsers
         }
 
 
-        public async Task<string> fetchUser(int user_id)
+        public async Task<string> Fetch(int user_id)
         {
             string cmd = "users/?game_id=" + game_id + "&username=" + username + "&user_id=" + user_id;
             string fhash = Tools.MD5Hash(apiurl + cmd + private_key);

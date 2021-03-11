@@ -24,7 +24,6 @@ namespace gamejoltapiCore
 
         public async Task<string> getTime()
         {
-            string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
             string cmd = "time/?game_id=" + game_id;
             string fhash = Tools.MD5Hash(apiurl + cmd + private_key);
             string response = await Tools.Get(apiurl + cmd + "&signature=" + fhash);
