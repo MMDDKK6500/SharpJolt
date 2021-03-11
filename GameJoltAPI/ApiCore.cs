@@ -7,9 +7,6 @@ using System.Text;
 namespace gamejoltapiCore
 {
 
-    /// <summary>
-    /// 
-    /// </summary>
     public class GJCore
     {
         public string game_id;
@@ -22,7 +19,7 @@ namespace gamejoltapiCore
             private_key = privatekey;
         }
 
-        public async Task<string> getTime()
+        public async Task<string> GetTime()
         {
             string cmd = "time/?game_id=" + game_id;
             string fhash = Tools.MD5Hash(apiurl + cmd + private_key);
@@ -31,11 +28,7 @@ namespace gamejoltapiCore
         }
 
     }
-    
 
-    /// <summary>
-    /// 
-    /// </summary>
     public class Tools
     {
         static readonly HttpClient client = new HttpClient();
@@ -54,9 +47,6 @@ namespace gamejoltapiCore
                 return "An error has occured!";
             }
         }
-
-
-
 
         ////////////Hash
         public static string MD5Hash(string input)
