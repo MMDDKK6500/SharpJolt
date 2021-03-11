@@ -76,5 +76,36 @@ namespace gamejoltapiTrophies
             return response;
         }
 
+
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="trophy_id"></param>
+        /// <returns></returns>
+        public async Task<string> Remove(string trophy_id)
+        {
+            //url of gamejolt 
+            string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
+
+
+            //String with paramethers
+            string cmd =  "trophies/" + "remove-achieved/" + "?game_id=" + game_id + "&username=" + username +
+                            "&user_token=" + user_token + "&trophy_id=" + trophy_id;
+
+
+            //Hash of signature 
+            string fhash = Tools.MD5Hash(apiurl + cmd + private_key);
+
+            
+            //Response urlApi + paramether + signature
+            string response = await Tools.Get(apiurl + cmd + "&signature=" + fhash);
+
+
+            return response;
+        }
+
+
+
     }
 }
