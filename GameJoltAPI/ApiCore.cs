@@ -9,7 +9,7 @@ namespace GamejoltAPI.Core
 
     public class GJCore
     {
-        public static string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
+        public const string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
         public string game_id;
         public string private_key;
 
