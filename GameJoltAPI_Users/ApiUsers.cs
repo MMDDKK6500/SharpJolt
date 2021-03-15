@@ -1,8 +1,8 @@
-﻿using gamejoltapiCore;
+﻿using GamejoltAPI.Core;
 using System.Threading.Tasks;
 
 
-namespace gamejoltapiUsers
+namespace GamejoltAPI.Users
 {
     public class GJUser
     {

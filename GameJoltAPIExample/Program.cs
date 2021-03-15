@@ -1,7 +1,7 @@
 ﻿using System;
-using gamejoltapiCore;
-using gamejoltapiTrophies;
-using gamejoltapiUsers;
+using GamejoltAPI.Core;
+using GamejoltAPI.Trophies;
+using GamejoltAPI.Users;
 
 namespace GameJoltAPIExample
 {

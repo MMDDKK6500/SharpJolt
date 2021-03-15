@@ -1,9 +1,9 @@
 ﻿using System;
-using gamejoltapiCore;
-using gamejoltapiUsers;
+using GamejoltAPI.Core;
+using GamejoltAPI.Users;
 using System.Threading.Tasks;
 
-namespace gamejoltapiScore
+namespace GamejoltAPI.Score
 {
     public class GJScore
     {

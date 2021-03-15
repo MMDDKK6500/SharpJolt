@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameJoltAPI_Scores", "GameJ
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameJoltAPI_Sessions", "GameJoltAPI_Sessions\GameJoltAPI_Sessions.csproj", "{6A0E2E69-3366-41FC-A4A8-F277AC6963EE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameJoltAPI_Friends", "GameJoltAPI_Friends\GameJoltAPI_Friends.csproj", "{309A818A-E154-4112-B9F9-44CBB175DFB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GameJoltAPI_Friends", "GameJoltAPI_Friends\GameJoltAPI_Friends.csproj", "{309A818A-E154-4112-B9F9-44CBB175DFB3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

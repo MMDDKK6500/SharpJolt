@@ -1,9 +1,9 @@
-﻿using gamejoltapiCore;
-using gamejoltapiUsers;
+﻿using GamejoltAPI.Core;
+using GamejoltAPI.Users;
 using System.Threading.Tasks;
 
 
-namespace gamejoltapiTrophies
+namespace GamejoltAPI.Trophies
 {
     public class GJTrophies
     {
@@ -28,7 +28,7 @@ namespace gamejoltapiTrophies
 
             string cmd;
             //check if any of the non-required parameters are inputed
-            if (achieved)
+            if (achieved==true||achieved==false)
             {
                 cmd = "trophies/?game_id=" + game_id + "&username=" + username + "&user_token=" + user_token + "&achieved=" + achieved;
             }

@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace gamejoltapiCore
+namespace GamejoltAPI.Core
 {
 
     public class GJCore
