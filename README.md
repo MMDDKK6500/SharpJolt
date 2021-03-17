@@ -12,7 +12,6 @@ Not very implemented, but functional. It is recommended to use the official [API
 - When working with the codebase, we recommend using an IDE with intellisense and syntax highlighting, such as [Visual Studio 2019](https://visualstudio.microsoft.com/pt-br/), [Jetbrains Rider](https://www.jetbrains.com/clion/) or [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Developers
-__
 
 [yorichii#6888](https://github.com/yorichii)
 
