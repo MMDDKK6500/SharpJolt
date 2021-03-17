@@ -2,12 +2,13 @@
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
     <Configurations>Debug;Release</Configurations>
   </PropertyGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\GameJoltAPI\GameJoltAPI_Core.csproj" />
+    <ProjectReference Include="..\GameJoltAPI_Users\GameJoltAPI_Users.csproj" />
     <ProjectReference Include="..\GameJoltAPI_Trophies\GameJoltAPI_Trophies.csproj" />
   </ItemGroup>
 
