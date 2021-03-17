@@ -4,7 +4,7 @@ using System.Threading;
 // ARGUMENTS
 ///////////////////////////////////////////////////////////////////////////////
 
-var target = Argument("target", "Test");
+var target = Argument("target", "Build");
 var configuration = Argument("configuration", "Release");
 var version = "1.0.0";
 
