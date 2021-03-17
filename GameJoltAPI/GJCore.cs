@@ -54,8 +54,11 @@ namespace GamejoltAPI.Core
                 return $"An internal error has occured: {ex.Message}";
             }
         }
+    }
 
-        public static string MD5Hash(string input)
+    public static class Extensions
+    {
+        public static string ToMD5Hash(this string input)
         {
             MD5 m = MD5.Create();
             byte[] data = m.ComputeHash(Encoding.UTF8.GetBytes(input));
@@ -66,7 +69,6 @@ namespace GamejoltAPI.Core
                 sbuild.Append(data[i].ToString("x2"));
 
             return sbuild.ToString();
-
         }
     }
 }
