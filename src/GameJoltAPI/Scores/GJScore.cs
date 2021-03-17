@@ -19,11 +19,12 @@ namespace GamejoltAPI.Score
             privateKey = core.PrivateKey;
         }
 
-
+        /*
         public async Task<string> Fetch()
         {
             // TO-DO!
             throw new System.NotImplementedException();
         }
+        */
     }
 }
