@@ -9,48 +9,52 @@ namespace GamejoltAPI.Core
 
     public class GJCore
     {
-        public const string apiurl = "https://api.gamejolt.com/api/game/v1_2/";
-        public string game_id;
-        public string private_key;
+        public const string APIUrl = "https://api.gamejolt.com/api/game/v1_2/";
 
-        public GJCore(string gameid, string privatekey)
+        private string gameId;
+        private string privateKey;
+
+        public string GameID
         {
-            game_id = gameid;
-            private_key = privatekey;
+            get => gameId;
+        }
+
+
+        public GJCore(string gameId, string privateKey)
+        {
+            this.gameId = gameId;
+            this.privateKey = privateKey;
         }
 
         public async Task<string> GetTime()
         {
-            string cmd = "time/?game_id=" + game_id;
-            string fhash = Tools.MD5Hash(apiurl + cmd + private_key);
-            string response = await Tools.Get(apiurl + cmd + "&signature=" + fhash);
+            string cmd = "time/?game_id=" + gameId;
+            string fhash = Tools.MD5Hash(APIUrl + cmd + privateKey);
+            string response = await Tools.Get(APIUrl + cmd + "&signature=" + fhash);
             return response;
         }
 
     }
 
-    public class Tools
+    public static class Tools
     {
-        public static string apiurl = GJCore.apiurl;
-
-        static readonly HttpClient client = new HttpClient();
+        private static readonly HttpClient client = new HttpClient();
 
         public static async Task<string> Get(string url)
         {
             try
             {
-                HttpResponseMessage response = await client.GetAsync(apiurl + url);
+                HttpResponseMessage response = await client.GetAsync(GJCore.APIUrl + url);
                 response.EnsureSuccessStatusCode();
                 string responseBody = await response.Content.ReadAsStringAsync();
                 return responseBody;
             }
-            catch (HttpRequestException)
+            catch (HttpRequestException ex)
             {
-                return "An error has occured!";
+                return $"An internal error has occured: {ex.Message}";
             }
         }
 
-        ////////////Hash
         public static string MD5Hash(string input)
         {
             MD5 m = MD5.Create();
