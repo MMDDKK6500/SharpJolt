@@ -1,9 +1,8 @@
-﻿using GamejoltAPI.Core;
-using GamejoltAPI.Users;
+﻿using GameJoltAPI.Core;
+using GameJoltAPI.Users;
 using System.Threading.Tasks;
 
-
-namespace GamejoltAPI.Trophies
+namespace GameJoltAPI.Trophies
 {
     public class GJTrophies
     {

@@ -1,6 +1,5 @@
-﻿using System.Threading.Tasks;
-using GamejoltAPI.Core;
-using GamejoltAPI.Users;
+﻿using GameJoltAPI.Core;
+using GameJoltAPI.Users;
 
 namespace GamejoltAPI.Score
 {

@@ -1,8 +1,7 @@
-﻿using GamejoltAPI.Core;
+﻿using GameJoltAPI.Core;
 using System.Threading.Tasks;
 
-
-namespace GamejoltAPI.Users
+namespace GameJoltAPI.Users
 {
     public class GJUser
     {
@@ -42,7 +41,6 @@ namespace GamejoltAPI.Users
             return res;
         }
 
-
         public async Task<string> Fetch(int user_id)
         {
             string cmd = "users/?game_id=" + gameId + "&username=" + username + "&user_id=" + user_id;
@@ -50,6 +48,5 @@ namespace GamejoltAPI.Users
             string res = await Tools.Get(GJCore.APIUrl + cmd + "&signature=" + str.ToMD5Hash());
             return res;
         }
-
     }
 }

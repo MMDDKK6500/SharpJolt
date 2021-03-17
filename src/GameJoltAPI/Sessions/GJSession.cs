@@ -1,6 +1,5 @@
-﻿using System;
-using GamejoltAPI.Core;
-using GamejoltAPI.Users;
+﻿using GameJoltAPI.Core;
+using GameJoltAPI.Users;
 using System.Threading.Tasks;
 
 namespace GamejoltAPI.Sessions
@@ -51,6 +50,5 @@ namespace GamejoltAPI.Sessions
             var response = await Tools.Get(GJCore.APIUrl + cmd + "&signature=" + str.ToMD5Hash());
             return response;
         }
-
     }
 }

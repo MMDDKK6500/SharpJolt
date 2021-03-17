@@ -1,13 +1,11 @@
-﻿using System;
-using GamejoltAPI.Core;
-using GamejoltAPI.Users;
+﻿using GameJoltAPI.Core;
+using GameJoltAPI.Users;
 using System.Threading.Tasks;
 
 namespace GamejoltAPI.Friends
 {
     public class GJFriends
     {
-
         private string username;
         private string userToken;
         private string gameId;
@@ -28,6 +26,5 @@ namespace GamejoltAPI.Friends
             string response = await Tools.Get(GJCore.APIUrl + cmd + "&signature=" + str.ToMD5Hash());
             return response;
         }
-
     }
 }
