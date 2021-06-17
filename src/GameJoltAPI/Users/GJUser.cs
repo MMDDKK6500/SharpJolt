@@ -1,4 +1,4 @@
-﻿using GameJoltAPI.Core;
+using GameJoltAPI.Core;
 using System.Threading.Tasks;
 
 namespace GameJoltAPI.Users
