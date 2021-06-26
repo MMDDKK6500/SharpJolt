@@ -4,7 +4,7 @@
 </p>
 
 # GameJolt API
-Not very implemented, but functional. It is recommended to use the official [API](https://gamejolt.com/game-api/doc).
+Not very implemented, but functional. Use [JoltNet](https://github.com/nilllzz/JoltNet) if you want a fuller(but outdated) version of the API.
 
 ## Requirements
 
@@ -17,4 +17,4 @@ Not very implemented, but functional. It is recommended to use the official [API
 
 [LyePedro#4510](https://github.com/LyeZinho)
 
-[Nati ❤#6500](https://github.com/MMDDKK6500)
+[MMDDKK#6500](https://github.com/MMDDKK6500)
